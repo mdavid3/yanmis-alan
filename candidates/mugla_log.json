@@ -250,5 +250,42 @@
     "date": "2021-09-14",
     "status": "partial_coverage",
     "coverage": 0.45
+  },
+  {
+    "date": "2026-08-29",
+    "status": "partial_coverage",
+    "coverage": 0.47
+  },
+  {
+    "date": "2026-08-31",
+    "status": "ok",
+    "coverage": 1,
+    "ref_scenes": 65,
+    "ref_window_days": 30,
+    "candidates": 9,
+    "total_ha": 118.1
+  },
+  {
+    "date": "2026-09-02",
+    "status": "ok",
+    "coverage": 0.98,
+    "ref_scenes": 65,
+    "ref_window_days": 30,
+    "candidates": 11,
+    "total_ha": 105.3
+  },
+  {
+    "date": "2026-09-03",
+    "status": "partial_coverage",
+    "coverage": 0.45
+  },
+  {
+    "date": "2026-09-05",
+    "status": "ok",
+    "coverage": 0.63,
+    "ref_scenes": 65,
+    "ref_window_days": 30,
+    "candidates": 3,
+    "total_ha": 16.2
   }
 ]

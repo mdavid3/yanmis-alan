@@ -258,5 +258,37 @@
     "ref_window_days": 30,
     "candidates": 586,
     "total_ha": 4655.0
+  },
+  {
+    "date": "2026-08-28",
+    "status": "ok",
+    "coverage": 1.0,
+    "ref_scenes": 27,
+    "ref_window_days": 30,
+    "candidates": 711,
+    "total_ha": 6224.7
+  },
+  {
+    "date": "2026-09-02",
+    "status": "ok",
+    "coverage": 1.0,
+    "ref_scenes": 29,
+    "ref_window_days": 30,
+    "candidates": 1088,
+    "total_ha": 10735.6
+  },
+  {
+    "date": "2026-09-04",
+    "status": "ok",
+    "coverage": 0.57,
+    "ref_scenes": 29,
+    "ref_window_days": 30,
+    "candidates": 1014,
+    "total_ha": 9816.5
+  },
+  {
+    "date": "2026-09-06",
+    "status": "failed",
+    "error": "Computation timed out."
   }
 ]
