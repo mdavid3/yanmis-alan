@@ -1,0 +1,6 @@
+gee-key.json
+verify/
+verify_events/
+eski_cikti/
+__pycache__/
+*.zip
