@@ -287,5 +287,15 @@
     "ref_window_days": 30,
     "candidates": 3,
     "total_ha": 16.2
+  },
+  {
+    "date": "2026-08-29",
+    "status": "partial_coverage",
+    "coverage": 0.47
+  },
+  {
+    "date": "2026-09-03",
+    "status": "partial_coverage",
+    "coverage": 0.45
   }
 ]

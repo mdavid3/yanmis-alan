@@ -290,5 +290,23 @@
     "date": "2026-09-06",
     "status": "failed",
     "error": "Computation timed out."
+  },
+  {
+    "date": "2026-09-06",
+    "status": "ok",
+    "coverage": 0.58,
+    "ref_scenes": 29,
+    "ref_window_days": 30,
+    "candidates": 1134,
+    "total_ha": 11273.1
+  },
+  {
+    "date": "2026-09-07",
+    "status": "ok",
+    "coverage": 1.0,
+    "ref_scenes": 27,
+    "ref_window_days": 30,
+    "candidates": 1087,
+    "total_ha": 9747.4
   }
 ]
