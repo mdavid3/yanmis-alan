@@ -1,0 +1,64 @@
+name: backfill
+
+on:
+  workflow_dispatch:
+    inputs:
+      start:
+        description: "Baslangic (YYYY-MM-DD)"
+        required: true
+      end:
+        description: "Bitis (YYYY-MM-DD)"
+        required: true
+
+concurrency:
+  group: pipeline
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  backfill:
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install earthengine-api shapely
+
+      - name: Write service account key
+        env:
+          GEE_KEY: ${{ secrets.GEE_KEY }}
+        run: printf '%s' "$GEE_KEY" > gee-key.json
+
+      - name: Scan tiles
+        env:
+          GEE_SERVICE_ACCOUNT: ${{ secrets.GEE_SERVICE_ACCOUNT }}
+        run: python scan_tiles.py ${{ inputs.start }} ${{ inputs.end }}
+
+      - name: Gates and catalog
+        env:
+          GEE_SERVICE_ACCOUNT: ${{ secrets.GEE_SERVICE_ACCOUNT }}
+          FIRMS_MAP_KEY: ${{ secrets.FIRMS_MAP_KEY }}
+        run: |
+          python gates.py
+          python brightness_gate.py
+          python events.py
+
+      - name: Remove key
+        if: always()
+        run: rm -f gee-key.json
+
+      - name: Commit results
+        run: |
+          git config user.name "scan-bot"
+          git config user.email "actions@github.com"
+          git pull --rebase
+          git add tiles.json candidates candidates_filtered candidates_final events.csv events.geojson exclusion.geojson gates_report.csv brightness_report.csv brightness_detail.csv || true
+          git diff --staged --quiet || git commit -m "backfill ${{ inputs.start }} ${{ inputs.end }}"
+          git push

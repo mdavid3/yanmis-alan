@@ -247,7 +247,11 @@ def main():
     all_rows = []
     exclusion_features = []
 
-    for aoi in ["mugla", "konya"]:
+    prefixes = sorted({
+        os.path.basename(p)[:-25]
+        for p in glob.glob(os.path.join(IN_DIR, "*_final.geojson"))
+    })
+    for aoi in prefixes:
         detections, scene_dates = load_detections(aoi)
         if not detections:
             continue

@@ -196,7 +196,9 @@ def apply_gates(aoi, scenes):
 def main():
     init()
     all_rows = []
-    for aoi in ["mugla", "konya"]:
+    files = glob.glob(os.path.join(IN_DIR, "*.geojson"))
+    prefixes = sorted({os.path.basename(p)[:-19] for p in files})
+    for aoi in prefixes:
         scenes = load_scenes(aoi)
         if not scenes:
             continue
