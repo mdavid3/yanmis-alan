@@ -1,0 +1,48 @@
+[
+  {
+    "date": "2025-06-16",
+    "status": "ok",
+    "valid": 0.99,
+    "ref_scenes": 13,
+    "ref_window_days": 30,
+    "candidates": 391,
+    "total_ha": 2465.3
+  },
+  {
+    "date": "2025-06-17",
+    "status": "failed",
+    "error": "HTTPSConnectionPool(host='earthengine.googleapis.com', port=443): Read timed out. (read timeout=180.0)"
+  },
+  {
+    "date": "2025-06-19",
+    "status": "ok",
+    "valid": 1.0,
+    "ref_scenes": 15,
+    "ref_window_days": 30,
+    "candidates": 516,
+    "total_ha": 3682.1
+  },
+  {
+    "date": "2025-06-22",
+    "status": "failed",
+    "error": "HTTPSConnectionPool(host='earthengine.googleapis.com', port=443): Read timed out. (read timeout=180.0)"
+  },
+  {
+    "date": "2025-06-24",
+    "status": "ok",
+    "valid": 1.0,
+    "ref_scenes": 15,
+    "ref_window_days": 30,
+    "candidates": 249,
+    "total_ha": 1628.5
+  },
+  {
+    "date": "2025-06-26",
+    "status": "ok",
+    "valid": 1.0,
+    "ref_scenes": 15,
+    "ref_window_days": 30,
+    "candidates": 253,
+    "total_ha": 1660.1
+  }
+]

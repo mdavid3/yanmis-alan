@@ -1,0 +1,38 @@
+[
+  {
+    "date": "2025-06-16",
+    "status": "ok",
+    "valid": 0.99,
+    "ref_scenes": 16,
+    "ref_window_days": 30,
+    "candidates": 448,
+    "total_ha": 4195.7
+  },
+  {
+    "date": "2025-06-17",
+    "status": "ok",
+    "valid": 0.94,
+    "ref_scenes": 15,
+    "ref_window_days": 30,
+    "candidates": 1,
+    "total_ha": 4.6
+  },
+  {
+    "date": "2025-06-19",
+    "status": "ok",
+    "valid": 1.0,
+    "ref_scenes": 16,
+    "ref_window_days": 30,
+    "candidates": 554,
+    "total_ha": 5181.4
+  },
+  {
+    "date": "2025-06-22",
+    "status": "ok",
+    "valid": 0.73,
+    "ref_scenes": 16,
+    "ref_window_days": 30,
+    "candidates": 28,
+    "total_ha": 136.6
+  }
+]

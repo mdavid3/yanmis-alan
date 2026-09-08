@@ -1,0 +1,124 @@
+[
+  {
+    "date": "2025-06-16",
+    "status": "ok",
+    "valid": 0.99,
+    "ref_scenes": 15,
+    "ref_window_days": 30,
+    "candidates": 252,
+    "total_ha": 2317.1
+  },
+  {
+    "date": "2025-06-17",
+    "status": "ok",
+    "valid": 0.98,
+    "ref_scenes": 14,
+    "ref_window_days": 30,
+    "candidates": 124,
+    "total_ha": 973.1
+  },
+  {
+    "date": "2025-06-19",
+    "status": "ok",
+    "valid": 1.0,
+    "ref_scenes": 15,
+    "ref_window_days": 30,
+    "candidates": 177,
+    "total_ha": 1678.0
+  },
+  {
+    "date": "2025-06-24",
+    "status": "ok",
+    "valid": 1.0,
+    "ref_scenes": 14,
+    "ref_window_days": 30,
+    "candidates": 160,
+    "total_ha": 1866.3
+  },
+  {
+    "date": "2025-06-26",
+    "status": "ok",
+    "valid": 1.0,
+    "ref_scenes": 14,
+    "ref_window_days": 30,
+    "candidates": 153,
+    "total_ha": 1919.4
+  },
+  {
+    "date": "2025-06-27",
+    "status": "ok",
+    "valid": 0.95,
+    "ref_scenes": 13,
+    "ref_window_days": 30,
+    "candidates": 91,
+    "total_ha": 977.4
+  },
+  {
+    "date": "2025-06-29",
+    "status": "failed",
+    "error": "HTTPSConnectionPool(host='earthengine.googleapis.com', port=443): Read timed out. (read timeout=180.0)"
+  },
+  {
+    "date": "2025-07-02",
+    "status": "ok",
+    "valid": 0.89,
+    "ref_scenes": 16,
+    "ref_window_days": 30,
+    "candidates": 240,
+    "total_ha": 2704.3
+  },
+  {
+    "date": "2025-07-04",
+    "status": "ok",
+    "valid": 1.0,
+    "ref_scenes": 17,
+    "ref_window_days": 30,
+    "candidates": 111,
+    "total_ha": 1152.7
+  },
+  {
+    "date": "2025-07-06",
+    "status": "ok",
+    "valid": 1.0,
+    "ref_scenes": 17,
+    "ref_window_days": 30,
+    "candidates": 118,
+    "total_ha": 1178.7
+  },
+  {
+    "date": "2025-07-07",
+    "status": "ok",
+    "valid": 0.93,
+    "ref_scenes": 16,
+    "ref_window_days": 30,
+    "candidates": 61,
+    "total_ha": 605.4
+  },
+  {
+    "date": "2025-07-09",
+    "status": "ok",
+    "valid": 0.97,
+    "ref_scenes": 17,
+    "ref_window_days": 30,
+    "candidates": 114,
+    "total_ha": 917.9
+  },
+  {
+    "date": "2025-07-12",
+    "status": "ok",
+    "valid": 0.93,
+    "ref_scenes": 17,
+    "ref_window_days": 30,
+    "candidates": 93,
+    "total_ha": 753.7
+  },
+  {
+    "date": "2025-07-14",
+    "status": "ok",
+    "valid": 0.85,
+    "ref_scenes": 17,
+    "ref_window_days": 30,
+    "candidates": 72,
+    "total_ha": 584.9
+  }
+]
