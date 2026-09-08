@@ -29,7 +29,7 @@ DNBR_THRESHOLD = 0.15
 DNBR2_THRESHOLD = 0.05
 MIN_AREA_HA = 3.0
 VALID_MIN = 0.4
-WORKERS = 8
+WORKERS = 6
 
 write_lock = Lock()
 
@@ -37,6 +37,7 @@ write_lock = Lock()
 def init():
     credentials = ee.ServiceAccountCredentials(SERVICE_ACCOUNT, KEY_FILE)
     ee.Initialize(credentials)
+    ee.data.setDeadline(180000)
 
 
 def mask_clouds(img):
@@ -76,7 +77,7 @@ def discover_tiles():
     tiles = sorted(col.aggregate_array("MGRS_TILE").distinct().getInfo())
     with open(TILES_FILE, "w", encoding="utf-8") as fh:
         json.dump(tiles, fh, indent=2)
-    print("karo sayisi:", len(tiles))
+    print("karo sayisi:", len(tiles), flush=True)
     return tiles
 
 
@@ -214,7 +215,7 @@ def run_tile(tile, start, end):
                 json.dump(log, fh, indent=2)
         new_entries.append(result)
         print(tile, result["date"], result["status"],
-              result.get("candidates", ""), result.get("total_ha", ""))
+              result.get("candidates", ""), result.get("total_ha", ""), flush=True)
     return tile, new_entries
 
 
@@ -234,14 +235,14 @@ def main():
     init()
     os.makedirs(OUT_DIR, exist_ok=True)
     tiles = load_tiles()
-    print("islenecek karo:", len(tiles), "aralik:", start, "->", end)
+    print("islenecek karo:", len(tiles), "aralik:", start, "->", end, flush=True)
 
     with ThreadPoolExecutor(max_workers=WORKERS) as pool:
         futures = {pool.submit(run_tile, t, start, end): t for t in tiles}
         for fut in as_completed(futures):
             tile, entries = fut.result()
             ok = sum(1 for e in entries if e["status"] == "ok")
-            print("bitti:", tile, len(entries), "sahne,", ok, "islendi")
+            print("bitti:", tile, len(entries), "sahne,", ok, "islendi", flush=True)
 
 
 if __name__ == "__main__":
