@@ -1,0 +1,129 @@
+[
+  {
+    "date": "2025-06-16",
+    "status": "ok",
+    "valid": 0.98,
+    "ref_scenes": 14,
+    "ref_window_days": 30,
+    "candidates": 1333,
+    "total_ha": 16805.3
+  },
+  {
+    "date": "2025-06-18",
+    "status": "ok",
+    "valid": 1.0,
+    "ref_scenes": 14,
+    "ref_window_days": 30,
+    "candidates": 2107,
+    "total_ha": 20029.0
+  },
+  {
+    "date": "2025-06-20",
+    "status": "failed",
+    "error": "Computation timed out."
+  },
+  {
+    "date": "2025-06-21",
+    "status": "ok",
+    "valid": 0.98,
+    "ref_scenes": 13,
+    "ref_window_days": 30,
+    "candidates": 676,
+    "total_ha": 5886.4
+  },
+  {
+    "date": "2025-06-23",
+    "status": "failed",
+    "error": "Computation timed out."
+  },
+  {
+    "date": "2025-06-26",
+    "status": "ok",
+    "valid": 1.0,
+    "ref_scenes": 15,
+    "ref_window_days": 30,
+    "candidates": 912,
+    "total_ha": 9052.0
+  },
+  {
+    "date": "2025-06-28",
+    "status": "ok",
+    "valid": 0.99,
+    "ref_scenes": 16,
+    "ref_window_days": 30,
+    "candidates": 17,
+    "total_ha": 126.5
+  },
+  {
+    "date": "2025-06-30",
+    "status": "ok",
+    "valid": 0.94,
+    "ref_scenes": 18,
+    "ref_window_days": 30,
+    "candidates": 1743,
+    "total_ha": 15543.6
+  },
+  {
+    "date": "2025-07-01",
+    "status": "ok",
+    "valid": 1.0,
+    "ref_scenes": 17,
+    "ref_window_days": 30,
+    "candidates": 488,
+    "total_ha": 4249.0
+  },
+  {
+    "date": "2025-07-03",
+    "status": "ok",
+    "valid": 1.0,
+    "ref_scenes": 19,
+    "ref_window_days": 30,
+    "candidates": 1436,
+    "total_ha": 13605.4
+  },
+  {
+    "date": "2025-07-06",
+    "status": "ok",
+    "valid": 1.0,
+    "ref_scenes": 19,
+    "ref_window_days": 30,
+    "candidates": 522,
+    "total_ha": 4258.7
+  },
+  {
+    "date": "2025-07-08",
+    "status": "ok",
+    "valid": 0.98,
+    "ref_scenes": 19,
+    "ref_window_days": 30,
+    "candidates": 1397,
+    "total_ha": 13770.1
+  },
+  {
+    "date": "2025-07-10",
+    "status": "ok",
+    "valid": 0.84,
+    "ref_scenes": 19,
+    "ref_window_days": 30,
+    "candidates": 1220,
+    "total_ha": 11102.0
+  },
+  {
+    "date": "2025-07-11",
+    "status": "ok",
+    "valid": 0.93,
+    "ref_scenes": 18,
+    "ref_window_days": 30,
+    "candidates": 213,
+    "total_ha": 1478.4
+  },
+  {
+    "date": "2025-07-13",
+    "status": "ok",
+    "valid": 0.86,
+    "ref_scenes": 19,
+    "ref_window_days": 30,
+    "candidates": 237,
+    "total_ha": 1787.6
+  }
+]

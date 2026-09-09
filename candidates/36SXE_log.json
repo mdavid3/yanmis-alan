@@ -1,0 +1,110 @@
+[
+  {
+    "date": "2025-06-16",
+    "status": "ok",
+    "valid": 0.9,
+    "ref_scenes": 15,
+    "ref_window_days": 30,
+    "candidates": 0,
+    "total_ha": 0
+  },
+  {
+    "date": "2025-06-18",
+    "status": "ok",
+    "valid": 1.0,
+    "ref_scenes": 16,
+    "ref_window_days": 30,
+    "candidates": 0,
+    "total_ha": 0
+  },
+  {
+    "date": "2025-06-20",
+    "status": "ok",
+    "valid": 0.98,
+    "ref_scenes": 16,
+    "ref_window_days": 30,
+    "candidates": 2,
+    "total_ha": 9.3
+  },
+  {
+    "date": "2025-06-21",
+    "status": "ok",
+    "valid": 0.73,
+    "ref_scenes": 15,
+    "ref_window_days": 30,
+    "candidates": 2,
+    "total_ha": 6.7
+  },
+  {
+    "date": "2025-06-23",
+    "status": "ok",
+    "valid": 0.99,
+    "ref_scenes": 17,
+    "ref_window_days": 30,
+    "candidates": 0,
+    "total_ha": 0
+  },
+  {
+    "date": "2025-06-28",
+    "status": "ok",
+    "valid": 0.97,
+    "ref_scenes": 17,
+    "ref_window_days": 30,
+    "candidates": 0,
+    "total_ha": 0
+  },
+  {
+    "date": "2025-06-30",
+    "status": "ok",
+    "valid": 1.0,
+    "ref_scenes": 17,
+    "ref_window_days": 30,
+    "candidates": 0,
+    "total_ha": 0
+  },
+  {
+    "date": "2025-07-03",
+    "status": "ok",
+    "valid": 1.0,
+    "ref_scenes": 15,
+    "ref_window_days": 30,
+    "candidates": 0,
+    "total_ha": 0
+  },
+  {
+    "date": "2025-07-08",
+    "status": "ok",
+    "valid": 0.98,
+    "ref_scenes": 14,
+    "ref_window_days": 30,
+    "candidates": 0,
+    "total_ha": 0
+  },
+  {
+    "date": "2025-07-10",
+    "status": "ok",
+    "valid": 0.88,
+    "ref_scenes": 14,
+    "ref_window_days": 30,
+    "candidates": 0,
+    "total_ha": 0
+  },
+  {
+    "date": "2025-07-11",
+    "status": "ok",
+    "valid": 0.76,
+    "ref_scenes": 13,
+    "ref_window_days": 30,
+    "candidates": 0,
+    "total_ha": 0
+  },
+  {
+    "date": "2025-07-13",
+    "status": "ok",
+    "valid": 0.95,
+    "ref_scenes": 15,
+    "ref_window_days": 30,
+    "candidates": 1,
+    "total_ha": 3.5
+  }
+]
