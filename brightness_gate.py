@@ -12,6 +12,7 @@ IN_DIR = "candidates_filtered"
 OUT_DIR = "candidates_final"
 REPORT = "brightness_report.csv"
 DETAIL = "brightness_detail.csv"
+DONE_FILE = "brightness_done.json"
 
 BANDS = ["B4", "B8", "B12"]
 PRE_START, PRE_END = 35, 5
@@ -70,9 +71,22 @@ def main():
     detail = []
 
     files = sorted(glob.glob(os.path.join(IN_DIR, "*_filtered.geojson")))
+    done = {}
+    if os.path.exists(DONE_FILE):
+        with open(DONE_FILE, "r", encoding="utf-8") as fh:
+            done = json.load(fh)
+    by_prefix = {}
+    for path in files:
+        b = os.path.basename(path)[:-17]
+        p_aoi, p_date = b.rsplit("_", 1)
+        by_prefix.setdefault(p_aoi, []).append(p_date)
+    tails = {k: set(sorted(v)[-2:]) for k, v in by_prefix.items()}
+
     for path in files:
         base = os.path.basename(path)[:-17]
         aoi, date_str = base.rsplit("_", 1)
+        if date_str in done.get(aoi, []) and date_str not in tails.get(aoi, set()):
+            continue
         d = dt.date.fromisoformat(date_str)
 
         with open(path, "r", encoding="utf-8") as fh:
@@ -123,7 +137,13 @@ def main():
 
         total_ha = sum(x["properties"].get("area_ha", 0) for x in survivors)
         rows.append([aoi, date_str, len(feats), elim, len(survivors), round(total_ha, 1)])
-        print(aoi, date_str, len(feats), "->", len(survivors))
+        print(aoi, date_str, len(feats), "->", len(survivors), flush=True)
+
+        seen = set(done.get(aoi, []))
+        seen.add(date_str)
+        done[aoi] = sorted(seen)
+        with open(DONE_FILE, "w", encoding="utf-8") as fh:
+            json.dump(done, fh)
 
         if survivors:
             out = {

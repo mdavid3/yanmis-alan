@@ -14,6 +14,7 @@ KEY_FILE = os.environ.get("GEE_KEY_FILE", "gee-key.json")
 IN_DIR = "candidates"
 OUT_DIR = "candidates_filtered"
 REPORT = "gates_report.csv"
+DONE_FILE = "gates_done.json"
 
 CROP_FRAC_LIMIT = 0.5
 RECT_LIMIT = 0.80
@@ -123,11 +124,16 @@ def persistence_flags(scenes):
             f["persistent"] = hit
 
 
-def apply_gates(aoi, scenes):
+def apply_gates(aoi, scenes, done):
     rows = []
     os.makedirs(OUT_DIR, exist_ok=True)
+    seen = set(done.get(aoi, []))
+    tail = {s["date"].isoformat() for s in scenes[-(PERSIST_LOOKAHEAD + 1):]}
 
     for s in scenes:
+        key = s["date"].isoformat()
+        if key in seen and key not in tail:
+            continue
         feats = s["feats"]
         n = len(feats)
         if n == 0:
@@ -188,14 +194,20 @@ def apply_gates(aoi, scenes):
             with open(os.path.join(OUT_DIR, name), "w", encoding="utf-8") as fh:
                 json.dump(out, fh)
 
-        print(aoi, s["date"].isoformat(), n, "->", len(survivors))
+        print(aoi, s["date"].isoformat(), n, "->", len(survivors), flush=True)
+        seen.add(key)
 
+    done[aoi] = sorted(seen)
     return rows
 
 
 def main():
     init()
     all_rows = []
+    done = {}
+    if os.path.exists(DONE_FILE):
+        with open(DONE_FILE, "r", encoding="utf-8") as fh:
+            done = json.load(fh)
     files = glob.glob(os.path.join(IN_DIR, "*.geojson"))
     prefixes = sorted({os.path.basename(p)[:-19] for p in files})
     for aoi in prefixes:
@@ -203,7 +215,9 @@ def main():
         if not scenes:
             continue
         persistence_flags(scenes)
-        all_rows.extend(apply_gates(aoi, scenes))
+        all_rows.extend(apply_gates(aoi, scenes, done))
+        with open(DONE_FILE, "w", encoding="utf-8") as fh:
+            json.dump(done, fh)
 
     with open(REPORT, "w", newline="", encoding="utf-8") as fh:
         w = csv.writer(fh)

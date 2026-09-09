@@ -66,7 +66,7 @@ jobs:
         run: |
           git config user.name "scan-bot"
           git config user.email "actions@github.com"
-          git add tiles.json candidates candidates_filtered candidates_final events.csv events.geojson exclusion.geojson gates_report.csv brightness_report.csv brightness_detail.csv || true
+          git add tiles.json candidates candidates_filtered candidates_final events.csv events.geojson exclusion.geojson gates_report.csv brightness_report.csv brightness_detail.csv gates_done.json brightness_done.json || true
           git diff --staged --quiet || git commit -m "backfill ${{ inputs.start }} ${{ inputs.end }}"
           git pull --rebase
           git push

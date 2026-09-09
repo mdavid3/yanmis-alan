@@ -15,7 +15,9 @@ permissions:
 jobs:
   scan:
     runs-on: ubuntu-latest
-    timeout-minutes: 120
+    timeout-minutes: 180
+    env:
+      PYTHONUNBUFFERED: "1"
     steps:
       - uses: actions/checkout@v4
 
@@ -42,10 +44,11 @@ jobs:
         run: rm -f gee-key.json
 
       - name: Commit results
+        if: always()
         run: |
           git config user.name "scan-bot"
           git config user.email "actions@github.com"
-          git add candidates candidates_filtered candidates_final events.csv events.geojson exclusion.geojson gates_report.csv brightness_report.csv brightness_detail.csv || true
+          git add candidates candidates_filtered candidates_final events.csv events.geojson exclusion.geojson gates_report.csv brightness_report.csv brightness_detail.csv gates_done.json brightness_done.json || true
           git diff --staged --quiet || git commit -m "daily scan $(date -u +%F)"
           git pull --rebase
           git push
