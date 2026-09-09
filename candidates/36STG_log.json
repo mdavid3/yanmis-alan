@@ -140,5 +140,19 @@
     "ref_window_days": 30,
     "candidates": 128,
     "total_ha": 721.4
+  },
+  {
+    "date": "2025-06-22",
+    "status": "failed",
+    "error": "Computation timed out."
+  },
+  {
+    "date": "2025-07-09",
+    "status": "ok",
+    "valid": 1.0,
+    "ref_scenes": 18,
+    "ref_window_days": 30,
+    "candidates": 350,
+    "total_ha": 2336.1
   }
 ]

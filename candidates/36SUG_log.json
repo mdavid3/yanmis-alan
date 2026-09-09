@@ -129,5 +129,14 @@
     "date": "2025-07-14",
     "status": "failed",
     "error": "Computation timed out."
+  },
+  {
+    "date": "2025-07-14",
+    "status": "ok",
+    "valid": 0.71,
+    "ref_scenes": 18,
+    "ref_window_days": 30,
+    "candidates": 224,
+    "total_ha": 1381.7
   }
 ]

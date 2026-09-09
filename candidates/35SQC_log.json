@@ -156,5 +156,24 @@
     "date": "2025-06-17",
     "status": "failed",
     "error": "Computation timed out."
+  },
+  {
+    "date": "2025-06-17",
+    "status": "failed",
+    "error": "HTTPSConnectionPool(host='earthengine.googleapis.com', port=443): Read timed out. (read timeout=180.0)"
+  },
+  {
+    "date": "2025-06-22",
+    "status": "ok",
+    "valid": 0.89,
+    "ref_scenes": 16,
+    "ref_window_days": 30,
+    "candidates": 1987,
+    "total_ha": 17243.0
+  },
+  {
+    "date": "2025-06-27",
+    "status": "failed",
+    "error": "Computation timed out."
   }
 ]
