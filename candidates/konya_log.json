@@ -308,5 +308,14 @@
     "ref_window_days": 30,
     "candidates": 1087,
     "total_ha": 9747.4
+  },
+  {
+    "date": "2026-09-09",
+    "status": "ok",
+    "coverage": 1,
+    "ref_scenes": 29,
+    "ref_window_days": 30,
+    "candidates": 1244,
+    "total_ha": 12099.4
   }
 ]
