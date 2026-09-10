@@ -70,5 +70,68 @@
     "ref_window_days": 30,
     "candidates": 1218,
     "total_ha": 21269.3
+  },
+  {
+    "date": "2025-07-18",
+    "status": "ok",
+    "valid": 0.7,
+    "ref_scenes": 10,
+    "ref_window_days": 30,
+    "candidates": 640,
+    "total_ha": 9992.6
+  },
+  {
+    "date": "2025-07-20",
+    "status": "ok",
+    "valid": 0.75,
+    "ref_scenes": 10,
+    "ref_window_days": 30,
+    "candidates": 1019,
+    "total_ha": 17311.2
+  },
+  {
+    "date": "2025-07-21",
+    "status": "ok",
+    "valid": 0.8,
+    "ref_scenes": 9,
+    "ref_window_days": 30,
+    "candidates": 315,
+    "total_ha": 2403.1
+  },
+  {
+    "date": "2025-07-23",
+    "status": "ok",
+    "valid": 0.93,
+    "ref_scenes": 11,
+    "ref_window_days": 30,
+    "candidates": 1608,
+    "total_ha": 30813.3
+  },
+  {
+    "date": "2025-07-26",
+    "status": "ok",
+    "valid": 0.96,
+    "ref_scenes": 12,
+    "ref_window_days": 30,
+    "candidates": 1017,
+    "total_ha": 15250.6
+  },
+  {
+    "date": "2025-07-28",
+    "status": "ok",
+    "valid": 0.7,
+    "ref_scenes": 13,
+    "ref_window_days": 30,
+    "candidates": 1138,
+    "total_ha": 19182.1
+  },
+  {
+    "date": "2025-08-05",
+    "status": "ok",
+    "valid": 0.71,
+    "ref_scenes": 10,
+    "ref_window_days": 30,
+    "candidates": 487,
+    "total_ha": 6535.4
   }
 ]

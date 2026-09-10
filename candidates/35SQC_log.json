@@ -175,5 +175,118 @@
     "date": "2025-06-27",
     "status": "failed",
     "error": "Computation timed out."
+  },
+  {
+    "date": "2025-07-16",
+    "status": "ok",
+    "valid": 0.88,
+    "ref_scenes": 17,
+    "ref_window_days": 30,
+    "candidates": 503,
+    "total_ha": 5098.2
+  },
+  {
+    "date": "2025-07-17",
+    "status": "ok",
+    "valid": 0.94,
+    "ref_scenes": 16,
+    "ref_window_days": 30,
+    "candidates": 1575,
+    "total_ha": 13129.8
+  },
+  {
+    "date": "2025-07-19",
+    "status": "ok",
+    "valid": 0.98,
+    "ref_scenes": 17,
+    "ref_window_days": 30,
+    "candidates": 639,
+    "total_ha": 8006.9
+  },
+  {
+    "date": "2025-07-22",
+    "status": "ok",
+    "valid": 1.0,
+    "ref_scenes": 17,
+    "ref_window_days": 30,
+    "candidates": 2773,
+    "total_ha": 27178.0
+  },
+  {
+    "date": "2025-07-24",
+    "status": "ok",
+    "valid": 1.0,
+    "ref_scenes": 17,
+    "ref_window_days": 30,
+    "candidates": 474,
+    "total_ha": 4283.4
+  },
+  {
+    "date": "2025-07-27",
+    "status": "ok",
+    "valid": 1.0,
+    "ref_scenes": 16,
+    "ref_window_days": 30,
+    "candidates": 1168,
+    "total_ha": 9854.5
+  },
+  {
+    "date": "2025-07-29",
+    "status": "ok",
+    "valid": 1.0,
+    "ref_scenes": 16,
+    "ref_window_days": 30,
+    "candidates": 308,
+    "total_ha": 2200.4
+  },
+  {
+    "date": "2025-08-01",
+    "status": "ok",
+    "valid": 0.98,
+    "ref_scenes": 17,
+    "ref_window_days": 30,
+    "candidates": 1114,
+    "total_ha": 9473.7
+  },
+  {
+    "date": "2025-08-05",
+    "status": "ok",
+    "valid": 0.92,
+    "ref_scenes": 16,
+    "ref_window_days": 30,
+    "candidates": 468,
+    "total_ha": 4579.8
+  },
+  {
+    "date": "2025-08-06",
+    "status": "ok",
+    "valid": 0.98,
+    "ref_scenes": 15,
+    "ref_window_days": 30,
+    "candidates": 1001,
+    "total_ha": 11734.5
+  },
+  {
+    "date": "2025-08-08",
+    "status": "ok",
+    "valid": 1.0,
+    "ref_scenes": 16,
+    "ref_window_days": 30,
+    "candidates": 450,
+    "total_ha": 3942.8
+  },
+  {
+    "date": "2025-08-11",
+    "status": "failed",
+    "error": "Computation timed out."
+  },
+  {
+    "date": "2025-08-13",
+    "status": "ok",
+    "valid": 1.0,
+    "ref_scenes": 16,
+    "ref_window_days": 30,
+    "candidates": 243,
+    "total_ha": 1536.6
   }
 ]

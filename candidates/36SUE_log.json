@@ -133,5 +133,131 @@
     "ref_window_days": 30,
     "candidates": 0,
     "total_ha": 0
+  },
+  {
+    "date": "2025-07-16",
+    "status": "ok",
+    "valid": 0.95,
+    "ref_scenes": 18,
+    "ref_window_days": 30,
+    "candidates": 0,
+    "total_ha": 0
+  },
+  {
+    "date": "2025-07-19",
+    "status": "ok",
+    "valid": 0.93,
+    "ref_scenes": 18,
+    "ref_window_days": 30,
+    "candidates": 0,
+    "total_ha": 0
+  },
+  {
+    "date": "2025-07-21",
+    "status": "ok",
+    "valid": 1.0,
+    "ref_scenes": 18,
+    "ref_window_days": 30,
+    "candidates": 0,
+    "total_ha": 0
+  },
+  {
+    "date": "2025-07-23",
+    "status": "ok",
+    "valid": 1.0,
+    "ref_scenes": 18,
+    "ref_window_days": 30,
+    "candidates": 0,
+    "total_ha": 0
+  },
+  {
+    "date": "2025-07-24",
+    "status": "ok",
+    "valid": 1.0,
+    "ref_scenes": 17,
+    "ref_window_days": 30,
+    "candidates": 0,
+    "total_ha": 0
+  },
+  {
+    "date": "2025-07-26",
+    "status": "ok",
+    "valid": 1.0,
+    "ref_scenes": 18,
+    "ref_window_days": 30,
+    "candidates": 0,
+    "total_ha": 0
+  },
+  {
+    "date": "2025-07-29",
+    "status": "ok",
+    "valid": 0.97,
+    "ref_scenes": 17,
+    "ref_window_days": 30,
+    "candidates": 0,
+    "total_ha": 0
+  },
+  {
+    "date": "2025-07-31",
+    "status": "ok",
+    "valid": 0.83,
+    "ref_scenes": 17,
+    "ref_window_days": 30,
+    "candidates": 0,
+    "total_ha": 0
+  },
+  {
+    "date": "2025-08-02",
+    "status": "ok",
+    "valid": 0.92,
+    "ref_scenes": 17,
+    "ref_window_days": 30,
+    "candidates": 0,
+    "total_ha": 0
+  },
+  {
+    "date": "2025-08-03",
+    "status": "ok",
+    "valid": 0.97,
+    "ref_scenes": 16,
+    "ref_window_days": 30,
+    "candidates": 0,
+    "total_ha": 0
+  },
+  {
+    "date": "2025-08-05",
+    "status": "ok",
+    "valid": 0.99,
+    "ref_scenes": 17,
+    "ref_window_days": 30,
+    "candidates": 0,
+    "total_ha": 0
+  },
+  {
+    "date": "2025-08-08",
+    "status": "ok",
+    "valid": 0.99,
+    "ref_scenes": 17,
+    "ref_window_days": 30,
+    "candidates": 0,
+    "total_ha": 0
+  },
+  {
+    "date": "2025-08-12",
+    "status": "ok",
+    "valid": 1.0,
+    "ref_scenes": 16,
+    "ref_window_days": 30,
+    "candidates": 0,
+    "total_ha": 0
+  },
+  {
+    "date": "2025-08-13",
+    "status": "ok",
+    "valid": 1.0,
+    "ref_scenes": 15,
+    "ref_window_days": 30,
+    "candidates": 0,
+    "total_ha": 0
   }
 ]

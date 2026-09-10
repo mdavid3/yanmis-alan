@@ -106,5 +106,104 @@
     "ref_window_days": 30,
     "candidates": 1,
     "total_ha": 3.5
+  },
+  {
+    "date": "2025-07-18",
+    "status": "ok",
+    "valid": 0.96,
+    "ref_scenes": 14,
+    "ref_window_days": 30,
+    "candidates": 0,
+    "total_ha": 0
+  },
+  {
+    "date": "2025-07-20",
+    "status": "ok",
+    "valid": 0.88,
+    "ref_scenes": 14,
+    "ref_window_days": 30,
+    "candidates": 0,
+    "total_ha": 0
+  },
+  {
+    "date": "2025-07-21",
+    "status": "ok",
+    "valid": 0.89,
+    "ref_scenes": 13,
+    "ref_window_days": 30,
+    "candidates": 0,
+    "total_ha": 0
+  },
+  {
+    "date": "2025-07-23",
+    "status": "ok",
+    "valid": 0.96,
+    "ref_scenes": 14,
+    "ref_window_days": 30,
+    "candidates": 0,
+    "total_ha": 0
+  },
+  {
+    "date": "2025-07-26",
+    "status": "ok",
+    "valid": 0.96,
+    "ref_scenes": 14,
+    "ref_window_days": 30,
+    "candidates": 0,
+    "total_ha": 0
+  },
+  {
+    "date": "2025-07-28",
+    "status": "ok",
+    "valid": 0.9,
+    "ref_scenes": 15,
+    "ref_window_days": 30,
+    "candidates": 0,
+    "total_ha": 0
+  },
+  {
+    "date": "2025-07-31",
+    "status": "ok",
+    "valid": 0.84,
+    "ref_scenes": 14,
+    "ref_window_days": 30,
+    "candidates": 0,
+    "total_ha": 0
+  },
+  {
+    "date": "2025-08-02",
+    "status": "ok",
+    "valid": 0.86,
+    "ref_scenes": 15,
+    "ref_window_days": 30,
+    "candidates": 0,
+    "total_ha": 0
+  },
+  {
+    "date": "2025-08-07",
+    "status": "ok",
+    "valid": 0.87,
+    "ref_scenes": 15,
+    "ref_window_days": 30,
+    "candidates": 0,
+    "total_ha": 0
+  },
+  {
+    "date": "2025-08-09",
+    "status": "ok",
+    "valid": 0.97,
+    "ref_scenes": 15,
+    "ref_window_days": 30,
+    "candidates": 0,
+    "total_ha": 0
+  },
+  {
+    "date": "2025-08-12",
+    "status": "ok",
+    "valid": 1.0,
+    "ref_scenes": 14,
+    "ref_window_days": 30,
+    "candidates": 0,
+    "total_ha": 0
   }
 ]
