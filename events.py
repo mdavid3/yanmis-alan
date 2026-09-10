@@ -130,6 +130,7 @@ def load_detections(aoi):
             detections.append({
                 "date": d,
                 "geom": geom,
+                "prefix": aoi,
                 "area_ha": f["properties"].get("area_ha", 0),
                 "mean_dnbr": f["properties"].get("mean_dnbr"),
             })
@@ -176,7 +177,7 @@ def merge_events(events):
     return events
 
 
-def build_events(detections, scene_dates, series_end):
+def build_events(detections, prefix_dates):
     events = []
     for d in sorted(detections, key=lambda x: x["date"]):
         target = None
@@ -217,7 +218,10 @@ def build_events(detections, scene_dates, series_end):
         ev["max_ha"] = max_ha
         ev["mean_dnbr"] = sum(dnbrs) / len(dnbrs) if dnbrs else None
 
-        later_scenes = [s for s in scene_dates if s > ev["last_date"]]
+        ev_prefixes = {x.get("prefix") for x in ev["detections"]}
+        relevant = sorted({s for p in ev_prefixes for s in prefix_dates.get(p, [])})
+        series_end = relevant[-1] if relevant else ev["last_date"]
+        later_scenes = [s for s in relevant if s > ev["last_date"]]
         expired = any((s - ev["last_date"]).days > CLOSE_DAYS for s in later_scenes) or \
                   (series_end - ev["last_date"]).days > CLOSE_DAYS
 
@@ -251,14 +255,27 @@ def main():
         os.path.basename(p)[:-25]
         for p in glob.glob(os.path.join(IN_DIR, "*_final.geojson"))
     })
+    detections = []
+    prefix_dates = {}
     for aoi in prefixes:
-        detections, scene_dates = load_detections(aoi)
-        if not detections:
+        dets, dates = load_detections(aoi)
+        if not dets:
             continue
-        series_end = max(scene_dates)
-        events = build_events(detections, scene_dates, series_end)
+        detections.extend(dets)
+        prefix_dates[aoi] = dates
+
+    if detections:
+        events = build_events(detections, prefix_dates)
+        events.sort(key=lambda e: (e["first_date"], -e["footprint"].area))
+        counters = {}
+        for ev in events:
+            big = max(ev["detections"], key=lambda x: x["area_ha"])
+            ev["aoi"] = big.get("prefix", "ev")
+            counters[ev["aoi"]] = counters.get(ev["aoi"], 0) + 1
+            ev["id"] = counters[ev["aoi"]]
 
         for ev in events:
+            aoi = ev["aoi"]
             recovery_delta = None
             if ev["status"] == "confirmed":
                 recovery_delta, _ = recovery_test(ev)
