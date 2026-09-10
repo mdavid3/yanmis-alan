@@ -133,5 +133,56 @@
     "ref_window_days": 30,
     "candidates": 83,
     "total_ha": 526.7
+  },
+  {
+    "date": "2025-07-20",
+    "status": "failed",
+    "error": "Computation timed out."
+  },
+  {
+    "date": "2025-07-21",
+    "status": "ok",
+    "valid": 0.99,
+    "ref_scenes": 15,
+    "ref_window_days": 30,
+    "candidates": 231,
+    "total_ha": 3012.4
+  },
+  {
+    "date": "2025-07-23",
+    "status": "ok",
+    "valid": 0.99,
+    "ref_scenes": 16,
+    "ref_window_days": 30,
+    "candidates": 2411,
+    "total_ha": 60645.1
+  },
+  {
+    "date": "2025-07-26",
+    "status": "ok",
+    "valid": 1.0,
+    "ref_scenes": 17,
+    "ref_window_days": 30,
+    "candidates": 400,
+    "total_ha": 9548.2
+  },
+  {
+    "date": "2025-07-28",
+    "status": "failed",
+    "error": "Computation timed out."
+  },
+  {
+    "date": "2025-08-09",
+    "status": "failed",
+    "error": "Computation timed out."
+  },
+  {
+    "date": "2025-08-12",
+    "status": "ok",
+    "valid": 1.0,
+    "ref_scenes": 9,
+    "ref_window_days": 30,
+    "candidates": 1873,
+    "total_ha": 59228.0
   }
 ]

@@ -242,5 +242,14 @@
     "ref_window_days": 30,
     "candidates": 579,
     "total_ha": 4457.7
+  },
+  {
+    "date": "2025-07-19",
+    "status": "ok",
+    "valid": 0.96,
+    "ref_scenes": 15,
+    "ref_window_days": 30,
+    "candidates": 1784,
+    "total_ha": 16721.9
   }
 ]

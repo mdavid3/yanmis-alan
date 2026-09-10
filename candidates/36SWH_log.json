@@ -215,5 +215,50 @@
     "ref_window_days": 30,
     "candidates": 1103,
     "total_ha": 12029.4
+  },
+  {
+    "date": "2025-07-16",
+    "status": "ok",
+    "valid": 0.98,
+    "ref_scenes": 17,
+    "ref_window_days": 30,
+    "candidates": 3131,
+    "total_ha": 29343.4
+  },
+  {
+    "date": "2025-08-05",
+    "status": "ok",
+    "valid": 0.99,
+    "ref_scenes": 18,
+    "ref_window_days": 30,
+    "candidates": 2035,
+    "total_ha": 21939.8
+  },
+  {
+    "date": "2025-08-08",
+    "status": "ok",
+    "valid": 0.96,
+    "ref_scenes": 18,
+    "ref_window_days": 30,
+    "candidates": 1072,
+    "total_ha": 12232.7
+  },
+  {
+    "date": "2025-08-12",
+    "status": "ok",
+    "valid": 0.98,
+    "ref_scenes": 17,
+    "ref_window_days": 30,
+    "candidates": 1553,
+    "total_ha": 16788.4
+  },
+  {
+    "date": "2025-08-13",
+    "status": "ok",
+    "valid": 0.96,
+    "ref_scenes": 16,
+    "ref_window_days": 30,
+    "candidates": 834,
+    "total_ha": 8919.2
   }
 ]

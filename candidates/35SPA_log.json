@@ -210,5 +210,14 @@
     "ref_window_days": 30,
     "candidates": 0,
     "total_ha": 0
+  },
+  {
+    "date": "2025-07-15",
+    "status": "ok",
+    "valid": 0.95,
+    "ref_scenes": 12,
+    "ref_window_days": 30,
+    "candidates": 0,
+    "total_ha": 0
   }
 ]

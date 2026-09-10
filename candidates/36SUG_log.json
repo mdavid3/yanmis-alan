@@ -251,5 +251,10 @@
     "ref_window_days": 30,
     "candidates": 40,
     "total_ha": 237.6
+  },
+  {
+    "date": "2025-07-19",
+    "status": "failed",
+    "error": "Computation timed out."
   }
 ]

@@ -263,5 +263,10 @@
     "ref_window_days": 30,
     "candidates": 198,
     "total_ha": 2293.7
+  },
+  {
+    "date": "2025-08-11",
+    "status": "failed",
+    "error": "HTTPSConnectionPool(host='earthengine.googleapis.com', port=443): Read timed out. (read timeout=180.0)"
   }
 ]
