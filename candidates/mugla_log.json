@@ -307,5 +307,24 @@
     "date": "2026-09-08",
     "status": "partial_coverage",
     "coverage": 0.46
+  },
+  {
+    "date": "2026-09-03",
+    "status": "partial_coverage",
+    "coverage": 0.45
+  },
+  {
+    "date": "2026-09-08",
+    "status": "partial_coverage",
+    "coverage": 0.46
+  },
+  {
+    "date": "2026-09-10",
+    "status": "ok",
+    "coverage": 1.0,
+    "ref_scenes": 65,
+    "ref_window_days": 30,
+    "candidates": 26,
+    "total_ha": 208.4
   }
 ]
