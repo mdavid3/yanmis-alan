@@ -264,5 +264,82 @@
     "ref_window_days": 30,
     "candidates": 158,
     "total_ha": 1692.7
+  },
+  {
+    "date": "2025-08-16",
+    "status": "ok",
+    "valid": 0.99,
+    "ref_scenes": 15,
+    "ref_window_days": 30,
+    "candidates": 136,
+    "total_ha": 1027.5
+  },
+  {
+    "date": "2025-08-18",
+    "status": "ok",
+    "valid": 0.94,
+    "ref_scenes": 15,
+    "ref_window_days": 30,
+    "candidates": 148,
+    "total_ha": 1073.3
+  },
+  {
+    "date": "2025-08-19",
+    "status": "ok",
+    "valid": 1.0,
+    "ref_scenes": 14,
+    "ref_window_days": 30,
+    "candidates": 563,
+    "total_ha": 4150.8
+  },
+  {
+    "date": "2025-08-21",
+    "status": "ok",
+    "valid": 1.0,
+    "ref_scenes": 15,
+    "ref_window_days": 30,
+    "candidates": 158,
+    "total_ha": 1147.7
+  },
+  {
+    "date": "2025-08-24",
+    "status": "ok",
+    "valid": 0.9,
+    "ref_scenes": 15,
+    "ref_window_days": 30,
+    "candidates": 807,
+    "total_ha": 6072.4
+  },
+  {
+    "date": "2025-08-26",
+    "status": "ok",
+    "valid": 1.0,
+    "ref_scenes": 15,
+    "ref_window_days": 30,
+    "candidates": 183,
+    "total_ha": 1211.5
+  },
+  {
+    "date": "2025-08-28",
+    "status": "ok",
+    "valid": 1.0,
+    "ref_scenes": 15,
+    "ref_window_days": 30,
+    "candidates": 160,
+    "total_ha": 979.7
+  },
+  {
+    "date": "2025-08-29",
+    "status": "ok",
+    "valid": 1.0,
+    "ref_scenes": 14,
+    "ref_window_days": 30,
+    "candidates": 482,
+    "total_ha": 3122.5
+  },
+  {
+    "date": "2025-08-31",
+    "status": "failed",
+    "error": "Too Many Requests: Exceeded Earth Engine concurrency limit. Your project is in Restricted Mode. Learn more at https://developers.google.com/earth-engine/guides/noncommercial_tiers#restricted_mode"
   }
 ]

@@ -160,5 +160,50 @@
     "ref_window_days": 30,
     "candidates": 0,
     "total_ha": 0
+  },
+  {
+    "date": "2025-08-19",
+    "status": "ok",
+    "valid": 1.0,
+    "ref_scenes": 8,
+    "ref_window_days": 30,
+    "candidates": 0,
+    "total_ha": 0
+  },
+  {
+    "date": "2025-08-21",
+    "status": "ok",
+    "valid": 1.0,
+    "ref_scenes": 8,
+    "ref_window_days": 30,
+    "candidates": 0,
+    "total_ha": 0
+  },
+  {
+    "date": "2025-08-24",
+    "status": "ok",
+    "valid": 1.0,
+    "ref_scenes": 8,
+    "ref_window_days": 30,
+    "candidates": 0,
+    "total_ha": 0
+  },
+  {
+    "date": "2025-08-29",
+    "status": "ok",
+    "valid": 0.99,
+    "ref_scenes": 8,
+    "ref_window_days": 30,
+    "candidates": 0,
+    "total_ha": 0
+  },
+  {
+    "date": "2025-08-31",
+    "status": "ok",
+    "valid": 1.0,
+    "ref_scenes": 8,
+    "ref_window_days": 30,
+    "candidates": 0,
+    "total_ha": 0
   }
 ]

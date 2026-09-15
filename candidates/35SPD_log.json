@@ -281,5 +281,61 @@
     "ref_window_days": 30,
     "candidates": 981,
     "total_ha": 15684.4
+  },
+  {
+    "date": "2025-08-16",
+    "status": "ok",
+    "valid": 1.0,
+    "ref_scenes": 15,
+    "ref_window_days": 30,
+    "candidates": 266,
+    "total_ha": 2646.1
+  },
+  {
+    "date": "2025-08-18",
+    "status": "ok",
+    "valid": 0.88,
+    "ref_scenes": 15,
+    "ref_window_days": 30,
+    "candidates": 261,
+    "total_ha": 1499.5
+  },
+  {
+    "date": "2025-08-19",
+    "status": "ok",
+    "valid": 0.98,
+    "ref_scenes": 14,
+    "ref_window_days": 30,
+    "candidates": 42,
+    "total_ha": 234.5
+  },
+  {
+    "date": "2025-08-21",
+    "status": "ok",
+    "valid": 1.0,
+    "ref_scenes": 15,
+    "ref_window_days": 30,
+    "candidates": 44,
+    "total_ha": 228.0
+  },
+  {
+    "date": "2025-08-24",
+    "status": "failed",
+    "error": "Too Many Requests: Exceeded Earth Engine concurrency limit. Your project is in Restricted Mode. Learn more at https://developers.google.com/earth-engine/guides/noncommercial_tiers#restricted_mode"
+  },
+  {
+    "date": "2025-08-28",
+    "status": "failed",
+    "error": "Too Many Requests: Exceeded Earth Engine concurrency limit. Your project is in Restricted Mode. Learn more at https://developers.google.com/earth-engine/guides/noncommercial_tiers#restricted_mode"
+  },
+  {
+    "date": "2025-08-29",
+    "status": "failed",
+    "error": "Too Many Requests: Exceeded Earth Engine concurrency limit. Your project is in Restricted Mode. Learn more at https://developers.google.com/earth-engine/guides/noncommercial_tiers#restricted_mode"
+  },
+  {
+    "date": "2025-08-31",
+    "status": "failed",
+    "error": "Too Many Requests: Exceeded Earth Engine concurrency limit. Your project is in Restricted Mode. Learn more at https://developers.google.com/earth-engine/guides/noncommercial_tiers#restricted_mode"
   }
 ]

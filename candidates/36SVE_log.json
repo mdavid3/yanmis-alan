@@ -223,5 +223,49 @@
     "ref_window_days": 30,
     "candidates": 0,
     "total_ha": 0
+  },
+  {
+    "date": "2025-08-15",
+    "status": "ok",
+    "valid": 1.0,
+    "ref_scenes": 14,
+    "ref_window_days": 30,
+    "candidates": 3,
+    "total_ha": 88.9
+  },
+  {
+    "date": "2025-08-18",
+    "status": "failed",
+    "error": "Too Many Requests: Exceeded Earth Engine concurrency limit. Your project is in Restricted Mode. Learn more at https://developers.google.com/earth-engine/guides/noncommercial_tiers#restricted_mode"
+  },
+  {
+    "date": "2025-08-20",
+    "status": "failed",
+    "error": "Too Many Requests: Exceeded Earth Engine concurrency limit. Your project is in Restricted Mode. Learn more at https://developers.google.com/earth-engine/guides/noncommercial_tiers#restricted_mode"
+  },
+  {
+    "date": "2025-08-22",
+    "status": "failed",
+    "error": "Too Many Requests: Exceeded Earth Engine concurrency limit. Your project is in Restricted Mode. Learn more at https://developers.google.com/earth-engine/guides/noncommercial_tiers#restricted_mode"
+  },
+  {
+    "date": "2025-08-23",
+    "status": "failed",
+    "error": "Too Many Requests: Exceeded Earth Engine concurrency limit. Your project is in Restricted Mode. Learn more at https://developers.google.com/earth-engine/guides/noncommercial_tiers#restricted_mode"
+  },
+  {
+    "date": "2025-08-25",
+    "status": "failed",
+    "error": "Too Many Requests: Exceeded Earth Engine concurrency limit. Your project is in Restricted Mode. Learn more at https://developers.google.com/earth-engine/guides/noncommercial_tiers#restricted_mode"
+  },
+  {
+    "date": "2025-08-28",
+    "status": "failed",
+    "error": "Too Many Requests: Exceeded Earth Engine concurrency limit. Your project is in Restricted Mode. Learn more at https://developers.google.com/earth-engine/guides/noncommercial_tiers#restricted_mode"
+  },
+  {
+    "date": "2025-08-30",
+    "status": "failed",
+    "error": "Too Many Requests: Exceeded Earth Engine concurrency limit. Your project is in Restricted Mode. Learn more at https://developers.google.com/earth-engine/guides/noncommercial_tiers#restricted_mode"
   }
 ]
